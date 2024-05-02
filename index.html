@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swagger Codegen</title>
+    <!-- MUI CSS --><!-- Roboto Font from jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/@fontsource/roboto/400.css" rel="stylesheet">
+    <!-- Material Icons from jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/material-icons/iconfont/material-icons.css" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container {
+            text-align: center;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.2);
+            padding: 50px;
+            border-radius: 8px;
+        }
+        input[type="text"], button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Swagger Codegen Form</h1>
+        <form action="/codegen" method="post">
+            <label for="url">Enter the URL of the OpenAPI spec:</label><br>
+            <input type="text" id="url" name="url" required><br><br>
+            <button type="submit">Generate Code</button>
+        </form>
+    </div>
+</body>
+</html>

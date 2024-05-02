@@ -3,6 +3,7 @@
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.7",
     "@types/bun": "latest"
   },
   "peerDependencies": {
@@ -19,5 +20,9 @@
     "express": "^4.19.2",
     "serverless-http": "^3.2.0",
     "swagger-axios-codegen": "^0.16.14"
+  },
+  "scripts": {
+    "build": "bun build ./index.ts --outdir ./dist",
+    "start": "node ./dist/index.js"
   }
 }
